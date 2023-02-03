@@ -24,7 +24,8 @@
 	$mail->setFrom('no-reply@studiodance.com.ua', 'No reply');
 	$mail->isHTML(true);
 	$mail->CharSet = 'UTF-8';
-	$mail->addAddress('danceplusart@gmail.com');
+	$mail->addAddress('mashtalir.sasha@gmail.com');
+	//$mail->addAddress('danceplusart@gmail.com');
 	$mail->Subject = 'New lead(studiodance.com.ua)';
 
 	$mail->Body = "Форма: $title <br><br>";

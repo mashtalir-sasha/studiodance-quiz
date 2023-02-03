@@ -3,7 +3,7 @@ let fileswatch   = 'html,htm,txt,json,md'; // List of files extensions for watch
 //let imageswatch  = 'jpg,jpeg,png,webp,svg,woff2'; // List of files extensions for watching & hard reload (comma separated)
 
 const { src, dest, parallel, series, watch } = require('gulp');
-const sass           = require('gulp-sass');
+const sass           = require('gulp-sass')(require('sass'));
 const cleancss       = require('gulp-clean-css');
 const concat         = require('gulp-concat');
 const browserSync    = require('browser-sync').create();

@@ -151,6 +151,7 @@ $(document).ready(function() {
 						$('.progress-line').slideUp(300);
 						gtag('event','submit',{'event_category':'submit','event_action':'quiz'});
 						fbq('track', 'Lead');
+						window.open("https://studiodance.com.ua/new-site/timetable.html");
 					}
 				});
 			}

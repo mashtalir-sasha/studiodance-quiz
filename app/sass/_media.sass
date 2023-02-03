@@ -8,6 +8,7 @@
 	.dev
 		float: none
 		margin: 20px auto
+
 //Small: ≥991px
 +media-breakpoint-down(sm)
 	.content-padding
@@ -66,26 +67,30 @@
 						margin-top: 5px
 		&__btn
 			margin: 0 auto
-	.foot
-		&__addr
-			margin-bottom: 20px
-		&__phone
-			&:last-child
-				margin-bottom: 20px
-		&-soc
-			display: table
-			margin: 0 auto
+
 
 //Extra small: 768
 +media-breakpoint-down(xs)
 	.new-subttl
 		text-align: center
 	.foot
+		&__ttl
+			text-align: center
+		&__phone
+			margin-left: auto
+			margin-right: auto
 		&__addr
 			text-align: center
-			padding-left: 0
-			&:before
-				display: none
-		&__phone
-			padding-left: 0
-			background-image: none
+		&-soc
+			margin-left: auto
+			margin-right: auto
+			margin-bottom: 40px
+
+	.timetable
+		overflow: hidden
+	
+	.scroll
+		overflow-x: scroll
+	
+	.table-content .th__main
+		min-width: 120px
